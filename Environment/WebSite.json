@@ -46,11 +46,14 @@
     "storageAccountNameConnectionStringName":{
       "type": "string",
       "defaultValue": "storageAccountCnnString"
+    },
+    "webSiteName":{
+      "type": "string",
+      "defaultValue": "[concat('webSite', uniqueString(resourceGroup().id))]"
     }
+
   },
-  "variables": {
-    "webSiteName": "[concat('webSite', uniqueString(resourceGroup().id))]"
-  },
+  "variables": {},
   "resources": [
     {
       "apiVersion": "2015-08-01",
@@ -70,7 +73,7 @@
     },
     {
       "apiVersion": "2015-08-01",
-      "name": "[variables('webSiteName')]",
+      "name": "[parameters('webSiteName')]",
       "type": "Microsoft.Web/sites",
       "location": "[resourceGroup().location]",
       
@@ -90,7 +93,7 @@
         "[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities/', parameters('identityName'))]"
       ],
       "properties": {
-        "name": "[variables('webSiteName')]",
+        "name": "[parameters('webSiteName')]",
         "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('hostingPlanName'))]"
       }
     },

@@ -4,6 +4,9 @@
   "parameters": {
     "hostingPlanName": {
       "value":"KeyVaultAPI-Deploy"
+    },
+    "webSiteName":{
+      "value": "string"
     }
   }
 }

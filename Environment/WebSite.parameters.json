@@ -6,7 +6,7 @@
       "value":"KeyVaultAPI-Deploy"
     },
     "webSiteName":{
-      "value": "string"
+      "value": "websitename"
     }
   }
 }

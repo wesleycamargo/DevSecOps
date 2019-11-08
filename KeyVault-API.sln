@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeyVault-API", "KeyVault-API\KeyVault-API.csproj", "{0F6DEE33-79E0-40AB-A8E3-0090897CBDCB}"
+EndProject
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "Environment", "Environment\Environment.deployproj", "{ED82FA28-5748-4F47-B1C6-E7D535C723AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F6DEE33-79E0-40AB-A8E3-0090897CBDCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F6DEE33-79E0-40AB-A8E3-0090897CBDCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F6DEE33-79E0-40AB-A8E3-0090897CBDCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F6DEE33-79E0-40AB-A8E3-0090897CBDCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED82FA28-5748-4F47-B1C6-E7D535C723AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED82FA28-5748-4F47-B1C6-E7D535C723AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED82FA28-5748-4F47-B1C6-E7D535C723AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED82FA28-5748-4F47-B1C6-E7D535C723AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4280C7E7-40BB-41C0-B8C8-1F530A49A18E}
+	EndGlobalSection
+EndGlobal
